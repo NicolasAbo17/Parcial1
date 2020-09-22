@@ -1,0 +1,38 @@
+#title{
+    font-family: 'Satisfy', cursive;
+}
+
+#banner{
+    margin-top: 1em;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+#navigation .nav{
+    background-color: rgb(50, 50, 58);
+    padding: 20px;
+}
+
+#navigation .nav-link{
+    color: lightgrey;
+}
+
+.centered{
+    text-align: center;
+}
+
+#menu .card-deck{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: .5rem;
+}
+
+#footerText{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}

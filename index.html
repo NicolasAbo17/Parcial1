@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Style CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <title>Parcial 1</title>
+</head>
+
+<body>
+    <!--Banner-->
+
+    <section id="banner">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand titulo" href="#">
+                <h1 id="title">Restaurant & Lounge</h1>
+            </a>
+            <hr>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="orderDetail()" href="#">
+                            <img src="resources/images/Carrito.png" width="40px" height="40px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <hr>
+        <img class="header-img center" src="resources/images/BurgerBanner.png">
+        <hr>
+
+    </section>
+    
+    <section id="navigation">
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Burgers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tacos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Salads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Desserts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Drinks & Side</a>
+            </li>
+          </ul>
+    </section>
+
+    <section id="menu">
+        <hr><h2 class="centered">Section</h2><hr>
+        
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Food name</h5>
+                  <p class="card-text">Food description description description description description description description description description description description description description description description description .</p>
+                  <h6>$10.00</h6>
+                  <a href="#" class="btn btn-dark">Add to car</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Food name</h5>
+                  <p class="card-text">Food description description description description description description description description description description description description description description description description .</p>
+                  <h6>$10.00</h6>
+                  <a href="#" class="btn btn-dark">Add to car</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Food name</h5>
+                  <p class="card-text">Food description description description description description description description description description description description description description description description description .</p>
+                  <h6>$10.00</h6>
+                  <a href="#" class="btn btn-dark">Add to car</a>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <hr><h2 class="centered">Order detail</h2><hr>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Qty.</th>
+                <th scope="col">Description</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>1</td>
+                <td>Double Cheese Hamburger</td>
+                <td>7.50</td>
+                <td>7.50</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>1</td>
+                <td>Double Cheese Hamburger</td>
+                <td>7.50</td>
+                <td>7.50</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>1</td>
+                <td>Double Cheese Hamburger</td>
+                <td>7.50</td>
+                <td>7.50</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>1</td>
+                <td>Double Cheese Hamburger</td>
+                <td>7.50</td>
+                <td>7.50</td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+
+    <footer>
+        <h6 id="footerText" class="centered">Contact us: +57 3102105253 - info@Restaurant - @restaurant</h6>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
