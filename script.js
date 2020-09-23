@@ -36,7 +36,7 @@ readJson().then((categories) => {
         <div class="card-body">
           <h5 class="card-title">${product.name}</h5>
           <p class="card-text">${product.description}</p>
-          <h6>$${product.price}</h6>
+          <h6>$${product.price.toFixed(2)}</h6>
           <a class="btn btn-dark" onclick="addToCar('${product.name}');">Add to car</a>
           </div>
         </div>
@@ -112,7 +112,7 @@ function getOrder(){
     tr.appendChild(td3);
 
     let td4 = document.createElement("td");
-    td4.appendChild(document.createTextNode(obj.price));
+    td4.appendChild(document.createTextNode(obj.price.toFixed(2)));
     tr.appendChild(td4);
 
     let td5 = document.createElement("td");
@@ -148,7 +148,7 @@ function generateConsole(){
       item: ++index,
       quantity: cant,
       description: product.name,
-      unitPrice: product.price,
+      unitPrice: product.price.toFixed(2),
     };
     print.push(printObject);
   }); 
