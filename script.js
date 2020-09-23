@@ -43,15 +43,15 @@ readJson().then((categories) => {
       </div>`;
       productsArray.push(product);
     });
-    categoriesHtmlMenu.innerHTML += `</div> </div>`;
+    categoriesHtmlMenu.innerHTML += "</div> </div>";
     document.getElementById(category.name.trim() + "CardDeck").hidden = true;
   });
   document.getElementById("order").hidden = true;
   document.getElementById("menu").hidden = true;
   document.getElementById("contItems").hidden = true;
-
 });
 
+// eslint-disable-next-line no-unused-vars
 function changeCategory(catIndex) {
   if (indexCategory != -1) {
     document.getElementById(
@@ -71,32 +71,34 @@ function changeCategory(catIndex) {
   emptyOrder();
 }
 
+// eslint-disable-next-line no-unused-vars
 function addToCar(productName) {
-  if(shoppingMap.get(productName) === undefined){
+  if (shoppingMap.get(productName) === undefined) {
     shoppingMap.set(productName, 1);
-  }
-  else{
+  } else {
     let temp = shoppingMap.get(productName);
     temp++;
     shoppingMap.set(productName, temp);
   }
-    shoppingCont++;
-    document.getElementById("contItems").hidden = false;
-    document.getElementById("contItems").innerHTML = shoppingCont + " items";
-  }
+  shoppingCont++;
+  document.getElementById("contItems").hidden = false;
+  document.getElementById("contItems").innerHTML = shoppingCont + " items";
+}
 
-function getOrder(){
-  if(shoppingCont == 0){
+// eslint-disable-next-line no-unused-vars
+function getOrder() {
+  if (shoppingCont == 0) {
     return;
   }
   indexCategory = -1;
   document.getElementById("menu").hidden = true;
   document.getElementById("order").hidden = false;
 
-  var index = 0; var total=0;
+  let index = 0;
+  let total = 0;
   let tableOrder = document.getElementById("car");
-  shoppingMap.forEach((quantity,productName) => {
-    var obj = productsArray.find((product) => product.name === productName);
+  shoppingMap.forEach((quantity, productName) => {
+    let obj = productsArray.find((product) => product.name === productName);
     let tr = document.createElement("tr");
 
     let td1 = document.createElement("td");
@@ -120,30 +122,33 @@ function getOrder(){
     tr.appendChild(td5);
 
     tableOrder.appendChild(tr);
-    total += (obj.price * quantity);
+    total += obj.price * quantity;
   });
-  document.getElementById("totalOrder").innerHTML = `Total $${total.toFixed(2)}`;
+  document.getElementById("totalOrder").innerHTML = `Total $${total.toFixed(
+    2
+  )}`;
 }
 
-function emptyOrder(){
+function emptyOrder() {
   let filas = document.getElementById("car");
   while (filas.firstChild) {
     filas.removeChild(filas.firstChild);
   }
 }
 
-function cancelOrder(){
+function cancelOrder() {
   shoppingMap = new Map();
   shoppingCont = 0;
   emptyOrder();
   document.getElementById("order").hidden = true;
 }
 
-function generateConsole(){
-  var index = 0;
+// eslint-disable-next-line no-unused-vars
+function generateConsole() {
+  let index = 0;
   let print = [];
-  shoppingMap.forEach((cant,productName) => {
-    var product = productsArray.find((object) => object.name === productName);
+  shoppingMap.forEach((cant, productName) => {
+    let product = productsArray.find((object) => object.name === productName);
     let printObject = {
       item: ++index,
       quantity: cant,
@@ -151,7 +156,8 @@ function generateConsole(){
       unitPrice: product.price.toFixed(2),
     };
     print.push(printObject);
-  }); 
+  });
+  // eslint-disable-next-line no-console
   console.log(print);
 
   cancelOrder();
