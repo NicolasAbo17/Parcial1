@@ -1,38 +1,69 @@
-#title{
-    font-family: 'Satisfy', cursive;
+#title {
+  font-family: "Satisfy", cursive;
 }
 
-#banner{
-    margin-top: 1em;
+#banner {
+  margin-top: 1em;
 }
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-
-#navigation .nav{
-    background-color: rgb(50, 50, 58);
-    padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
-#navigation .nav-link{
-    color: lightgrey;
+.shoppingCar {
+  color: darkgray;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
-.centered{
-    text-align: center;
+#contItems{
+    margin-left: 1em;
 }
 
-#menu .card-deck{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: .5rem;
+#navigation .nav {
+  background-color: #333a40;
+  padding: 20px;
 }
 
-#footerText{
-    margin-top: 2em;
-    margin-bottom: 1em;
+#navigation .nav-link {
+  color: lightgrey;
+}
+
+.centered {
+  text-align: center;
+}
+
+.menuProduct {
+  margin-top: 1em;
+}
+
+#menu .menuImage {
+  width: 100%;
+  height: 200px;
+}
+
+#order .pinkBtn{
+  background-color: salmon;
+  color: black;
+  float: right;
+  border-style: groove;
+  border-radius: 5px;
+}
+
+#order .lightBtn{
+  background-color: lightyellow;
+  color: black;
+  float: right;
+  border-style: groove;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+#footerText {
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
